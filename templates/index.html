@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Slides Músicais Formatado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}" type="image/x-icon">
+</head>
+<body>
+    <h1>Gerador de Slides Formatado</h1>
+    <form method="POST">
+        <label for="title">Digite o Título:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="title_font_size">Tamanho da Fonte do Título:</label><br>
+        <input type="number" id="title_font_size" name="title_font_size" value="96" required><br><br>
+        
+        <label for="content">Digite a Letra:</label><br>
+        <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
+
+        <label for="font_size">Tamanho da Fonte da Letra:</label><br>
+        <input type="number" id="font_size" name="font_size" value="50" required><br><br>
+
+        <label for="lines_per_slide">Linhas por Slides:</label><br>
+        <input type="number" id="lines_per_slide" name="lines_per_slide" value="5" required><br><br>
+
+        <input type="submit" value="GERAR SLIDES!">
+    </form>
+</body>
+</html>
+  

@@ -1,0 +1,61 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte Arial para todo o corpo */
+    font-size: 16pt; /* Define o tamanho da fonte em 16pt para o corpo */
+    text-align: center; /* Centraliza o texto dentro do body */
+    margin: 0;
+    padding: 0;
+    background-color: #0033cc; /* Cor de fundo verde */
+}
+
+h1 {
+    margin-top: 20px; /* Margem superior do título */
+    margin-bottom: 20px; /* Margem inferior do título */
+    color: #fff;
+}
+
+form {
+    display: inline-block; /* Faz com que o formulário se ajuste ao tamanho do conteúdo */
+    text-align: center; /* Alinha o texto do formulário ao centro */
+    background-color: #fff; /* Cor de fundo do formulário */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border-radius: 8px; /* Cantos arredondados do formulário */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra do formulário */
+    font-weight: bold; /* Define o texto do formulário como negrito */
+}
+
+label {
+    display: block; /* Faz com que os rótulos sejam exibidos em bloco */
+    margin-bottom: 10px; /* Margem inferior dos rótulos */
+    text-align: center; /* Centraliza o texto dos rótulos */
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: calc(100% - 22px); /* Ajusta a largura dos campos para se ajustar ao padding */
+    padding: 10px; /* Espaçamento interno dos campos */
+    margin-bottom: 10px; /* Margem inferior dos campos */
+    border: 1px solid #ccc; /* Borda dos campos */
+    border-radius: 4px; /* Cantos arredondados dos campos */
+    font-family: Arial, sans-serif; 
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+}
+
+textarea {
+    resize: vertical; /* Permite que a área de texto seja redimensionada verticalmente */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 4px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    font-size: 16pt; /* Tamanho da fonte do botão */
+    text-align: center; /* Centraliza o texto do botão */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse sobre ele */
+}
